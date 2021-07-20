@@ -496,7 +496,7 @@ button:focus {
     padding: 50px;
 }
 .jobs .card {
-    border-radius: 20px;
+    border-radius: 6px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 @media(max-width:992px)  {
@@ -1008,6 +1008,10 @@ overflow: hidden;
     color: #08526d;
     margin: 0 10px;
 }
+@media(max-width:992px){
+    .copyright li a{
+        margin: 0 7px;
+    }
 .copyright li a:hover {
     color:#7E7777 ; 
 }
