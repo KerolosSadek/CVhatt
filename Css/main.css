@@ -201,6 +201,24 @@ background-color:#0441a4;
     display: flex;
     padding: 10px;
 }
+.container .header{
+    padding-top: 20px;
+}
+.container .header .navbar{
+    width: 100%;
+    z-index: 2;
+}
+.container .header .navbar .navbar-brand img{
+    width: 110px ;
+    height: 45px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.header form{
+    display: inline;
+    float: left;
+    margin-left: 40px;
+}
 .landing-page .header .links-container{
     width: 100%;
     z-index: 2;
@@ -336,24 +354,6 @@ button:focus {
 .container{ 
     padding: 0 15px;
     margin: auto;
-}
-.container .header{
-    padding-top: 20px;
-}
-.container .header .navbar{
-    width: 100%;
-    z-index: 2;
-}
-.container .header .navbar .navbar-brand img{
-    width: 110px;
-    height: 45px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-}
-.header form{
-    display: inline;
-    float: left;
-    margin-left: 40px;
 }
 .header .links{
     margin-top: 5px;
@@ -553,7 +553,7 @@ button:focus {
 .social h2{
     text-align: center;
     color: var(--main--color);
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-weight: bold;
     margin: 0 0 50;
 }
