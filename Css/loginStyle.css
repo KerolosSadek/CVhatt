@@ -1,0 +1,78 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+:root{
+    --main--color:#0441a4;
+}
+form{
+    width: 40% !important;
+    margin: auto;
+    border-radius: 3px;
+}
+@media(max-width:992px){
+    form{
+        width: 100% !important;
+    }
+}
+    /* Start Login Form */
+.container {
+    padding: 40px
+}
+.login-form h2{
+    text-align: center;
+    color: var(--main--color);
+    padding-top: 20px;
+    font-weight: bold;
+}
+.login-form label{
+    color: var(--main--color);
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(119, 15, 15);
+    border-radius: 5px;
+    box-sizing: border-box;
+    }
+
+button {
+    background-color: #de6748;
+    color: #FFF;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 5px !important;
+}
+
+button:hover {
+    color: #de6748;
+    background-color: #FFF;
+    border: 1px solid #de6748;
+}
+.cancelbtn{
+    float: left;
+    width: 50%;
+    background-color: #f44336;
+}
+
+span.psw {
+    float: right;
+    color: var(--main--color);
+    padding-top: 15px;
+}
+span.psw a{
+    font-weight: bold;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+}
+    .cancelbtn {
+        width: 100%;
+}
+}
