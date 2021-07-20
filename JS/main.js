@@ -241,20 +241,20 @@ function randomizeImgs() {
 //         }
 //     });
 
-//     //Start Bullets
+    // Start Bullets
 
-//     let ourBullets = document.querySelectorAll(".nav-bullets .bullet");
+    let ourBullets = document.querySelectorAll(".nav-bullets .bullet");
 
-//     ourBullets.forEach(bullet => {
+    ourBullets.forEach(bullet => {
 
-//         bullet.addEventListener('click' , (e) =>{
+        bullet.addEventListener('click' , (e) =>{
 
-//             document.querySelector(e.target.dataset.section).scrollIntoView({behavior:'smooth'});
-//         });
+            document.querySelector(e.target.dataset.section).scrollIntoView({behavior:'smooth'});
+        });
 
-//     });
+    });
     
-    //Switch Bullets
+    // Switch Bullets
 
     let bulletsSpan = document.querySelectorAll(".bullets-option span");
 
