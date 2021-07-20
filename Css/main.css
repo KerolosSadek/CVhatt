@@ -553,7 +553,7 @@ button:focus {
 .social h2{
     text-align: center;
     color: var(--main--color);
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-weight: bold;
     margin: 0 0 50;
 }
