@@ -175,84 +175,84 @@ function randomizeImgs() {
 
 //Start Popup For Image
 
-let ourGallery = document.querySelectorAll(".gallery img");
+// let ourGallery = document.querySelectorAll(".gallery img");
 
-ourGallery.forEach(img => {
-    img.addEventListener('click' , (e) =>{
+// ourGallery.forEach(img => {
+//     img.addEventListener('click' , (e) =>{
 
-        let overlay = document.createElement("div");
-        overlay.className = 'popup-overlay';
-        document.body.appendChild(overlay);
+//         let overlay = document.createElement("div");
+//         overlay.className = 'popup-overlay';
+//         document.body.appendChild(overlay);
 
-        //Create Popup Box
-        let popupBox = document.createElement("div");
-        popupBox.className = 'popup-box';
+//         //Create Popup Box
+//         let popupBox = document.createElement("div");
+//         popupBox.className = 'popup-box';
 
-        //Create Alt Image
-        if(img.alt !==null){
+//         //Create Alt Image
+//         if(img.alt !==null){
 
-            let imageHeading = document.createElement("h3");
+//             let imageHeading = document.createElement("h3");
 
-            let imgTxt = document.createTextNode(img.alt);
+//             let imgTxt = document.createTextNode(img.alt);
 
-            imageHeading.appendChild(imgTxt);
+//             imageHeading.appendChild(imgTxt);
 
-            popupBox.appendChild(imageHeading);
+//             popupBox.appendChild(imageHeading);
 
-        };
+//         };
 
-        //Create Image
-        let popupImage = document.createElement("img");
-        popupImage.src = img.src
+//         //Create Image
+//         let popupImage = document.createElement("img");
+//         popupImage.src = img.src
 
-        //Add Popup Image To Popup Box
-        popupBox.appendChild(popupImage);
+//         //Add Popup Image To Popup Box
+//         popupBox.appendChild(popupImage);
 
-        //Add Popup Box To Body
-        document.body.appendChild(popupBox);
+//         //Add Popup Box To Body
+//         document.body.appendChild(popupBox);
 
         
-        //Create Close Button
-        let closeButton = document.createElement("span");
+//         //Create Close Button
+//         let closeButton = document.createElement("span");
 
-        let closeMark = document.createTextNode("X");
+//         let closeMark = document.createTextNode("X");
 
-        closeButton.appendChild(closeMark);
+//         closeButton.appendChild(closeMark);
 
-        closeButton.className = 'close-button';
+//         closeButton.className = 'close-button';
 
-        //Add Close Button To Popup Box
-        popupBox.appendChild(closeButton);
+//         //Add Close Button To Popup Box
+//         popupBox.appendChild(closeButton);
 
     
         
-    });
-});
-    //Close Popup
+//     });
+// });
+//     //Close Popup
 
-    document.addEventListener('click' , (e) =>{
+//     document.addEventListener('click' , (e) =>{
 
-        if(e.target.className == 'close-button'){
-            //Remove Popup
-            e.target.parentNode.remove();
+//         if(e.target.className == 'close-button'){
+//             //Remove Popup
+//             e.target.parentNode.remove();
 
-            //Remove Overlay
-            document.querySelector(".popup-overlay").remove();
-        }
-    });
+//             //Remove Overlay
+//             document.querySelector(".popup-overlay").remove();
+//         }
+//     });
 
-    //Start Bullets
+//     //Start Bullets
 
-    let ourBullets = document.querySelectorAll(".nav-bullets .bullet");
+//     let ourBullets = document.querySelectorAll(".nav-bullets .bullet");
 
-    ourBullets.forEach(bullet => {
+//     ourBullets.forEach(bullet => {
 
-        bullet.addEventListener('click' , (e) =>{
+//         bullet.addEventListener('click' , (e) =>{
 
-            document.querySelector(e.target.dataset.section).scrollIntoView({behavior:'smooth'});
-        });
+//             document.querySelector(e.target.dataset.section).scrollIntoView({behavior:'smooth'});
+//         });
 
-    });
+//     });
     
     //Switch Bullets
 
