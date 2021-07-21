@@ -1,6 +1,4 @@
 
-
-
 //Toggle Class
 document.querySelector(".toggle-setting .fa-gear").onclick = function() {
 
