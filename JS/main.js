@@ -247,4 +247,3 @@ function randomizeImgs() {
 
         window.location.reload();
     };
-    
