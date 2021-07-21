@@ -67,7 +67,6 @@ button {
     width: 100%;
     border-radius: 5px !important;
 }
-
 button:hover {
     color: #de6748;
     background-color: #FFF;
@@ -89,7 +88,12 @@ button:hover {
 }
 .signupbtn{
     float: right;
-    width: 40%;
+    width: 50%;
+}
+@media(max-width:992px){
+    .signupbtn{
+        margin-bottom:180px;
+    }
 }
 
 /* Add padding to container elements */
