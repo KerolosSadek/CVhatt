@@ -429,9 +429,6 @@ button:focus {
         padding: 0 45px;
     }
 }
-    
-
-
         /*End About Us*/
 
         /*Start service Box */
@@ -488,8 +485,6 @@ button:focus {
         /*End services Box */
 
 
-
-        
         /* Start Jobs */
 .jobs{
     background-color: #EEE;
@@ -566,6 +561,10 @@ button:focus {
 .social fa{
     text-decoration: none;
 }
+.social a:hover{
+    transition: .5s all ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
 .social i{
     font-size: 64px;
 }
@@ -593,211 +592,6 @@ button:focus {
     }
 }
         /* End Social */
-
-
-
-        /*Start Our Gallery*/
-.gallery{
-    padding:50px 0;
-    background-color: #d8cdcd;
-}
-.gallery h2{
-    margin: 0;
-    margin-bottom: 50px ;
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--main--color);
-    text-align: center;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-}
-.gallery .images-box{
-    text-align: center;
-}
-.gallery .images-box img{
-    width: 200px;
-    height: 140px;
-    padding: 3px;
-    margin: 3px;
-    cursor: pointer;
-    -webkit-box-shadow: -7px 0px 11px 1px rgba(12,14,13,0.71); 
-    box-shadow: -7px 0px 11px 1px rgba(12,14,13,0.71);
-
-}
-.popup-overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    background-color: rgb(0, 0, 0,.7);
-}
-.popup-box{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    background-color:#FFF ;
-    border: 6px double rgba(7,29,43,0.4);
-    border-radius: 15px;
-    z-index: 1001;
-    padding: 5px;
-    -webkit-box-shadow: inset 2px 6px 17px 1px #000000, 8px 0px 7px -2px #000000; 
-    box-shadow: inset 2px 6px 17px 1px #000000, 8px 0px 7px -2px #000000;
-    
-}
-@media(max-width:992px){
-    .popup-box{
-        position: fixed;
-        top: 30%;
-        left: 35%;
-        transform: translate(-27% , -50%);
-    }
-}
-.popup-box h3{
-    margin: 10px 0 30px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 25px;
-    color: var(--main--color);
-    text-transform: uppercase;
-    letter-spacing: 6px;
-}
-.close-button{
-    position:absolute;
-    top: -15px;
-    right: -15px;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    background-color: var(--main--color);
-    font-weight:bold;
-    font-size: 25px;
-    color: #fff;
-    text-align: center;
-    font-family: arial , Tahoma;
-    border-radius: 50%;
-    cursor: pointer;
-
-}
-.popup-box img{
-    max-width: 100%;
-}
-        /*End Our Gallery*/
-
-        /*Start Timeline Section*/
-
-.timeline{
-    padding-top: 50px;
-    background-color: rgb(235 239 241);
-}        
-.timeline h2{
-    margin-bottom: 60px ;
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--main--color);
-    text-transform: uppercase;
-    letter-spacing: 17px;
-    text-align: center;
-}
-.timeline .timeline-content{
-position: relative;
-overflow: hidden;
-}
-.timeline .timeline-content::before{
-    content: '';
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    margin-left: -1px;
-    background-color: var(--main--color);
-}
-.timeline .timeline-content .year{
-    position: relative;
-    margin: 20px auto;
-    text-align: center;
-    background-color: var(--main--color);
-    width: 50px;
-    border-radius: 6px;
-    font-weight: bold;
-    z-index: 2;
-    padding: 2px 5px;
-    color: #fff;
-}
-.timeline .timeline-content .left,
-.timeline .timeline-content .right{
-    width: calc(50% - 25px); 
-    position: relative;
-    margin-bottom: 40px;
-}
-.timeline .timeline-content .left{
-    float: left;
-}
-.timeline .timeline-content .left::before{
-    right: -35px;
-    
-}
-.timeline .timeline-content .right{
-    float: right;
-}
-.timeline .timeline-content .right::before{
-    left: -35px;
-    
-}
-.timeline .timeline-content .left::before,
-.timeline .timeline-content .right::before{
-    content: '';
-    width: 14px;
-    height: 14px;
-    background-color: #fff;
-    border: 3px solid var(--main--color);
-    border-radius: 50%;
-    position: absolute;
-    top: 20px;
-}
-.timeline .timeline-content .content{
-    padding: 20px;
-    background-color: #fff;
-}
-.timeline .timeline-content .content h3{
-    font-weight: bold;
-    color: var(--main--color);
-    margin: 0 0 10px;
-}
-.timeline .timeline-content .content p{
-    color: #666;
-    margin: 0;
-    line-height: 1.8;
-}
-@media(max-width:992px){
-    .timeline .timeline-content .content p {
-        font-size: 13px;
-    }
-}
-
-.timeline .timeline-content .left .content::before,
-.timeline .timeline-content .right .content::before{
-    content: '';
-    border-style: solid;
-    border-width: 10px;
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 20px;
-}
-.timeline .timeline-content .left .content::before{
-    right: -20px;
-    border-color: transparent transparent transparent #fff;
-}
-.timeline .timeline-content .right .content::before{
-    left: -20px;
-    border-color: transparent #fff transparent transparent ;
-}
-
-        /*End Timeline Section*/
 
         /*Start Features Section*/
 .features{
@@ -1039,7 +833,5 @@ overflow: hidden;
             max-width: 1140px;
         }
     }
-    
-        /*End Grid System*/
-
-        
+}
+        /* End Grid System */
